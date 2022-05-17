@@ -1,0 +1,1223 @@
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+@keyframes lineDown {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: top center;
+  }
+
+  25% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+
+  75% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+  76% {
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: scale(1, 0);
+    transform-origin: bottom center;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1.7);
+  }
+}
+
+.logo {
+  width: 100%;
+  height: 180px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  filter: drop-shadow(0 0 0.75rem black);
+  display: block;
+  color: #fb5;
+  position: fixed;
+  z-index: 1;
+}
+
+.brasao {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 47%;
+  padding-bottom: 0px;
+  margin: 0 0;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 50px;
+  margin: 225px 0 0 0;
+  text-align: center;
+  position: fixed;
+  transition: 1s ease-in;
+  z-index: 2;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: gainsboro;
+  font-size: 0.9em;
+  position: relative;
+  transition: 0.3s ease-out;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  top: -16px;
+  padding: 19px 13px 10px 13px;
+  margin: 0 auto;
+}
+
+.menu a:hover {
+  background: gainsboro;
+  color: black;
+  font-weight: 500;
+}
+
+.oficial {
+  color: gainsboro;
+  float: right;
+  font-size: 0.9em;
+  margin: 10px 130px 0px 160px;
+}
+
+.fundo {
+  width: 100%;
+}
+
+.boas-vindas {
+  position: relative;
+  height: 1000px;
+  background-image: url(img/background-igreja.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax {
+  background-attachment: fixed;
+}
+
+.boas-vindas img {
+  padding: 0;
+  filter: contrast(85%);
+}
+
+.chevron-down-outline {
+  width: 90px;
+  height: 90px;
+  padding: 140px;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  animation: lineDown 1.5s ease-out infinite;
+}
+
+.chevron-down-outline::before {
+  content: "";
+  animation: lineDown 1.5s ease-out infinite;
+  transform-origin: top center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.texto-foto {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 15%;
+  font-size: 3em;
+  font-weight: 500;
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+  max-width: 100%;
+}
+
+.texto-foto ion-icon {
+  margin-left: 483px;
+}
+
+.grade {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.servicos img {
+  max-width: 90px;
+}
+
+.servicos h4 {
+  font-size: 1rem;
+  color: black;
+}
+
+.col-1 {
+  float: left !important;
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.acessar {
+  margin: 10px 22% 0px 22%;
+  padding: 15px;
+  color: gainsboro;
+  font-size: 14px;
+  text-transform: uppercase;
+  clear: both;
+  transition: all 0.3s ease-out;
+  border: none;
+  background-color: black;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.acessar:hover {
+  background: gainsboro;
+  color: black;
+}
+
+/* .fa-thin .fa-file-certificate {
+  font-size: 500px;
+  padding: 10px 0 10px 50px;
+  color: black;
+} */
+
+.section1 {
+  width: 100%;
+  height: 200px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+  background: rgb(238, 238, 238); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  position: relative;
+}
+
+.regiao a {
+  text-decoration: none;
+  color: black;
+}
+
+.regiao a:hover {
+  background: black;
+  color: #bb9a62;
+}
+
+.link-regiao {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.location-outline {
+  font-size: 50px;
+  padding: 10px 0 10px 50px;
+  color: black;
+}
+
+.location-outline:hover {
+  color: #bb9a62;
+}
+
+.prazos-legais {
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+  background: rgb(238, 238, 238); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.prazos-legais h1 {
+  font-size: 3em;
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+  margin: 0;
+  padding: 1em;
+}
+
+.prazos-legais p {
+  margin-bottom: 10px;
+}
+
+.prazos-legais:nth-child(3) {
+  margin-bottom: 2em;
+}
+
+.tabela img {
+  filter: blur(50%);
+
+  width: 1900px;
+  height: 280px;
+}
+
+.tabela {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  color: aliceblue;
+  background: #bb9a62;
+  opacity: 85%;
+  font-weight: 600;
+  position: absolute;
+  top: 110px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.contato {
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+  background: rgb(238, 238, 238); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.contato h1 {
+  font-size: 50px;
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+}
+
+.contato i {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  padding: 20px 0 0 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+  background: rgb(181, 189, 200); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+.divisoria {
+  clear: both;
+  background: black;
+  width: 100%;
+  height: 1px;
+  margin: 30px auto;
+}
+
+#header_bar {
+  transition: 1s ease-in;
+}
+
+/* CHECKLIST DE DOCUMENTOS */
+
+.fundoCheck {
+  max-width: 100%;
+  width: 100%;
+  height: 700px;
+}
+
+.texto-P {
+  font-size: medium;
+  text-shadow: none;
+}
+
+.texto-foto-black {
+  position: absolute;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  top: 37%;
+  left: 25%;
+  font-size: 3em;
+  font-weight: 500;
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+}
+
+.checkList {
+  width: 100%;
+  background-color: gainsboro;
+  margin: -8px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/* .box-check {
+  width: 450px;
+  height: 40px;
+  border: solid 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  flex-wrap: wrap;
+} */
+
+.lista {
+  font-size: 20px;
+  margin: 5px auto;
+  list-style: none;
+}
+
+.lista:hover {
+  background: #888;
+}
+
+.download-outline {
+  color: black;
+}
+
+.download-outline:hover {
+  animation: zoom 1s ease-in-out infinite;
+  text-decoration: none;
+  color: purple;
+}
+
+.nome-logo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: rgb(0 0 0 / 10%) 0px 5px 0px;
+}
+
+.footer-end {
+  margin: 15px auto 15px;
+  font-size: 20px;
+}
+
+/* REQUERIMENTO */
+
+.fundo-req {
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+}
+
+.texto-foto-req {
+  background-attachment: fixed;
+  position: absolute;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  top: 37%;
+  left: 38%;
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+}
+
+.requerimento {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.req {
+  font-size: 2rem;
+  text-shadow: rgb(0 0 0 / 30%) 0px 3px 0px;
+}
+
+.text-list {
+  font-size: 1rem;
+}
+
+.document-text-outline {
+  color: #aaa;
+  font-size: 3rem;
+}
+
+.document-text-outline:hover {
+  color: black;
+}
+
+.btn-req {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: gainsboro;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-out;
+  border: none;
+  background-color: black;
+  border-radius: 6px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn-req:hover {
+  background: gainsboro;
+  color: black;
+}
+
+/* CONTATO */
+
+/* .maps {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ */
+
+.fundo-info {
+  width: 100%;
+}
+
+.maps {
+  padding: 10px 10px 30px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mapa {
+  height: 400px;
+  width: 700px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.contact-us {
+  height: 400px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+}
+
+.title-info {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5em;
+}
+
+.content-info {
+  border: 1px solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.content-info .contact-us {
+  background-color: gainsboro;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 100px;
+  top: 0;
+  width: 30%; /* Could be more or less, depending on screen size */
+  height: 400%;
+}
+
+.modal-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  color: black;
+  font-size: 18px;
+}
+
+.btn-modal {
+  width: 173px;
+  height: 50px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-modal:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 332px 0 0 0; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  opacity: 0.7;
+  box-shadow: 10px 5px 5px black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .texto-foto,
+.section1,
+.prazos-legais,
+.contato {
+  visibility: hidden;
+} */
+
+/* ---------------- RESPONSIVE --------------*/
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 350px !important;
+  }
+  .texto-foto-req {
+    font-size: 2em !important;
+    left: 8%;
+  }
+  .fundo-info {
+    width: 100%;
+    height: 200px;
+  }
+  .modal-content {
+    margin-top: 370px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  .fundo-info {
+    width: 100%;
+    height: 300px;
+  }
+
+  .menu.on {
+    display: block;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .ul-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 0px;
+    height: 100%;
+    position: relative;
+  }
+
+  .col-1 {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .brasao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 174px;
+  }
+
+  .texto-foto {
+    top: 30%;
+  }
+
+  .boas-vindas {
+    height: 820px;
+    background-position: left;
+  }
+
+  .oficial {
+    font-size: small;
+    display: contents;
+  }
+
+  #header_bar {
+    transition: none;
+  }
+
+  .divisoria {
+    width: 100%;
+  }
+
+  .prazos-legais {
+    padding-top: 83em;
+  }
+
+  .prazos-legais h1 {
+    font-size: 2em;
+  }
+  .prazos-legais p {
+    font-size: 14px;
+  }
+
+  .grade {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .chevron-down-outline {
+    display: none;
+  }
+
+  .servicos img {
+    max-width: 100px;
+  }
+
+  .footer {
+    height: 135px;
+    font-size: 13px;
+  }
+
+  .footer-end {
+    font-size: 14px;
+  }
+
+  .hamburguer-bt {
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    right: 50%;
+    left: 5%;
+    width: 60px;
+    margin-top: 70px;
+    transition: all 0.2s ease-out;
+    z-index: 4000;
+  }
+
+  .hamburguer-bt .hamburguer-bt__stripe {
+    width: 100%;
+    height: 10px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  .hamburguer-bt.on {
+    position: fixed;
+  }
+
+  .fundoCheck {
+    height: 300px;
+  }
+  .texto-foto-black {
+    position: static;
+  }
+
+  .lista {
+    width: 300px;
+    margin-left: -15px;
+  }
+
+  ul hr {
+    margin-left: -150px;
+    margin-bottom: 40px;
+  }
+
+  .fundo-req {
+    height: 300px;
+  }
+
+  .texto-foto-req {
+    font-size: 2.5em;
+    left: 8%;
+    position: inherit;
+  }
+
+  .requerimento {
+    margin-top: 50px;
+    font-size: 1.5em;
+    left: 424px;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 2em;
+  }
+
+  .title-info {
+    margin-bottom: 166px;
+    margin-top: -14px;
+    font-size: 1em;
+  }
+
+  .maps {
+    padding: 0;
+    margin-bottom: 200px;
+  }
+
+  .content-info {
+    width: 86vw;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+  }
+  #mapa {
+    width: 84vw;
+    padding: 0;
+  }
+  .contact-us {
+    width: 84vw;
+    padding: 0;
+    border-radius: 0%;
+  }
+
+  .contact-us h1 {
+    font-size: 20px;
+  }
+  .contact-us div {
+    font-size: 15px;
+  }
+  .modal-content {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    margin-left: -125px;
+  }
+
+  .close {
+    margin-left: -274px;
+  }
+  .modal-icon {
+    margin-top: -47px;
+    font-size: 15px;
+    margin-bottom: 52px;
+  }
+  .modalicon-mobile {
+    width: 74px;
+  }
+
+  .btn-modal {
+    margin-top: -27px;
+    margin-left: 101px;
+    width: 99px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.on {
+    display: block;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .ul-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 0px;
+    height: 100%;
+    position: relative;
+  }
+  .hamburguer-bt {
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    right: 50%;
+    left: 5%;
+    width: 60px;
+    margin-top: 70px;
+    transition: all 0.2s ease-out;
+    z-index: 4000;
+  }
+
+  .hamburguer-bt .hamburguer-bt__stripe {
+    width: 100%;
+    height: 10px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  .hamburguer-bt.on {
+    position: fixed;
+  }
+
+  .boas-vindas {
+    width: 100%;
+  }
+  .divisoria {
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    width: 100%;
+  }
+  .texto-foto ion-icon {
+    display: none;
+  }
+  .grade {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+  .acessar {
+    padding: 8px;
+  }
+  .servicos img {
+    max-width: 57px;
+  }
+  .servicos h4 {
+    font-size: 12px;
+  }
+  .brasao {
+    padding-left: 43%;
+  }
+  .oficial {
+    margin: 10px 260px 0px 0px;
+  }
+  .fundo {
+    width: 100%;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .prazos-legais h1 {
+    padding: 0;
+  }
+
+  .prazos-legais {
+    width: 100%;
+  }
+  .contato {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .texto-foto-black {
+    left: 0;
+  }
+
+  .texto-foto-req {
+    left: 5%;
+  }
+  .fundo-info {
+    width: 100%;
+  }
+  .maps {
+    padding: 0px;
+    padding-bottom: 1em;
+  }
+
+  #mapa {
+    width: 100%;
+  }
+  .contact-us {
+    width: 100%;
+    height: 420px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.on {
+    display: block;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .ul-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 0px;
+    height: 100%;
+    position: relative;
+  }
+  .hamburguer-bt {
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    right: 50%;
+    left: 5%;
+    width: 60px;
+    margin-top: 70px;
+    transition: all 0.2s ease-out;
+    z-index: 4000;
+  }
+
+  .hamburguer-bt .hamburguer-bt__stripe {
+    width: 100%;
+    height: 10px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+  }
+
+  .hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  .hamburguer-bt.on {
+    position: fixed;
+  }
+  .texto-foto-black {
+    left: 0;
+  }
+
+  .fundo-info {
+    width: 100%;
+  }
+  .maps {
+    padding: 0px;
+    padding-bottom: 1em;
+  }
+
+  #mapa {
+    width: 100%;
+  }
+  .contact-us {
+    width: 100%;
+    height: 420px;
+    padding-top: 0px;
+  }
+}
