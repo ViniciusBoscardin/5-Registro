@@ -1,6 +1,6 @@
 
 var urlAtual = window.location.pathname; 
-console.log(urlAtual)
+
 var setNumber = urlAtual === '/index.html' ? 710 : 390 
 function fadeNav(){  
   var offset = getScrollXY();
@@ -100,12 +100,12 @@ function inicializar() {
 
 // -------------MENU HAMBURGUER----------------
    const menuMobile = document.getElementById('menuMobile');
-   console.log('menuMobile')
+   
    const navMobile = document.getElementById('navMobile');
    menuMobile.addEventListener('click', openMenu);
 
  function openMenu() {
-   console.log(1)
+   
          menuMobile.classList.toggle('on');
        navMobile.classList.toggle('on');
    }
