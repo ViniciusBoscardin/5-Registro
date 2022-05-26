@@ -833,7 +833,7 @@ body {
 
   .boas-vindas {
     height: 820px;
-    background-position: left;
+    background-attachment: scroll;
   }
 
   .oficial {
