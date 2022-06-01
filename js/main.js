@@ -1,4 +1,3 @@
-
 var urlAtual = window.location.pathname; 
 
 var setNumber = urlAtual === '/index.html' ? 710 : 390 
@@ -6,8 +5,7 @@ function fadeNav(){
   var offset = getScrollXY();
   //Se offset for maior que 0, set opacity to ..., se não set to 1
   offset[1] > setNumber ? setNavOpacity(0) : setNavOpacity(1.0); 
-	// console.log(offset[1])
-  // console.log(urlAtual, setNumber, offset[1])
+
 
 }
 
@@ -38,6 +36,21 @@ if( typeof( window.pageYOffset ) == 'number' ) {
   return [ scrOfX, scrOfY ];
 }
 
+
+
+// //Scroll-Reveal 
+
+// window.sr = ScrollReveal ({ reset: true});
+// sr.reveal('.texto-foto', {
+//   rotate: {x:0, y:80, z:0},
+//   duration: 1000
+// });
+// sr.reveal('.section1', {duration: 1000});
+// sr.reveal('.prazos-legais', {duration: 1000});
+// sr.reveal('.contato', {duration: 1000});
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -55,9 +68,13 @@ function abrirModal() {
 }
 
 // When the user clicks on <span> (x), close the modal
-if(urlAtual === '/index.html'){span.onclick = function() {
-  modal.style.display = "none";
-}}
+
+if(urlAtual === '/index.html')
+   {span.onclick = function() {
+    modal.style.display = "none";
+  }}
+
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -66,17 +83,6 @@ window.onclick = function(event) {
   }
 }
 
-
-// //Scroll-Reveal 
-
-// window.sr = ScrollReveal ({ reset: true});
-// sr.reveal('.texto-foto', {
-//   rotate: {x:0, y:80, z:0},
-//   duration: 1000
-// });
-// sr.reveal('.section1', {duration: 1000});
-// sr.reveal('.prazos-legais', {duration: 1000});
-// sr.reveal('.contato', {duration: 1000});
 
 
 /* MAPS */

@@ -65,9 +65,8 @@ body {
   filter: drop-shadow(0 0 0.75rem black);
   display: block;
   color: #fb5;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -479,8 +478,6 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  top: 37%;
-  left: 25%;
   font-size: 3em;
   font-weight: 500;
   text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
@@ -545,22 +542,18 @@ body {
 /* REQUERIMENTO */
 
 .fundo-req {
-  max-width: 100%;
   width: 100%;
-  height: 600px;
+  height: 350px;
 }
 
 .texto-foto-req {
   background-attachment: fixed;
-  position: absolute;
   color: black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  top: 37%;
-  left: 38%;
   font-size: 4em;
   font-weight: 500;
   text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
@@ -761,11 +754,9 @@ body {
 /* ---------------- RESPONSIVE --------------*/
 @media screen and (max-width: 320px) {
   .logo {
-    width: 350px !important;
   }
   .texto-foto-req {
     font-size: 2em !important;
-    left: 8%;
   }
   .fundo-info {
     width: 100%;
@@ -941,8 +932,8 @@ body {
 
   .texto-foto-req {
     font-size: 2.5em;
-    left: 8%;
-    position: inherit;
+    padding: 2rem;
+    position: absolute;
   }
 
   .requerimento {
@@ -1128,11 +1119,11 @@ body {
     width: 100%;
   }
   .texto-foto-black {
-    left: 0;
+    padding: 18rem 2rem 1rem 1rem;
   }
 
   .texto-foto-req {
-    left: 5%;
+    padding: 1rem;
   }
   .fundo-info {
     width: 100%;
@@ -1212,7 +1203,7 @@ body {
     position: fixed;
   }
   .texto-foto-black {
-    left: 0;
+    padding: 18rem 2rem 1rem 1rem;
   }
 
   .fundo-info {
@@ -1242,12 +1233,10 @@ body {
 
 @media screen and (min-width: 1201px) and (max-width: 1650px) {
   .texto-foto-black {
-    top: 30%;
-    left: 10%;
+    padding: 20rem 2rem 1rem 1rem;
   }
   .texto-foto-req {
-    top: 30%;
-    left: 33%;
+    padding: 1em;
   }
 
   .servicos h4 {
@@ -1262,4 +1251,7 @@ body {
   }
 }
 @media screen and (min-width: 1651px) and (max-width: 3000px) {
+  .texto-foto-black {
+    padding: 15rem 23rem 1rem 1rem;
+  }
 }
