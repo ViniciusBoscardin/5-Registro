@@ -909,11 +909,16 @@ body {
     position: fixed;
   }
 
+  .texto-foto-black {
+    padding: 21em 1em 1em 1em;
+  }
+
+  .checkList {
+    padding: 13em 1em 1em 1em;
+  }
+
   .fundoCheck {
     height: 300px;
-  }
-  .texto-foto-black {
-    position: static;
   }
 
   .lista {
@@ -1250,8 +1255,14 @@ body {
     width: 609px;
   }
 }
-@media screen and (min-width: 1651px) and (max-width: 3000px) {
+@media screen and (min-width: 1651px) and (max-width: 2500px) {
   .texto-foto-black {
     padding: 15rem 23rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 2501px) and (max-width: 4000px) {
+  .texto-foto-black {
+    padding: 23rem 3rem 1rem 1rem;
   }
 }
