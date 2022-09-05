@@ -176,6 +176,7 @@ body {
   text-align: center;
   justify-content: center;
   animation: lineDown 1.5s ease-out infinite;
+  cursor: pointer;
 }
 
 .chevron-down-outline::before {

@@ -57,7 +57,7 @@
       <span>BEM-VINDO AO</span>
       <span>5º SERVIÇO DE REGISTRO</span>
       <span>DE IMÓVEIS DE CURITIBA</span>
-      <ion-icon name="chevron-down-outline" class="chevron-down-outline"></ion-icon>
+      <ion-icon onClick="scrollWin(0, 1000);" name="chevron-down-outline" class="chevron-down-outline" id="js-seta"></ion-icon>
 
     </div>
   </main>
@@ -204,7 +204,11 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
+  <script>
+    function scrollWin(x, y) {
+        window.scrollBy(x, y);
+    }
+    </script>
 
 
   <script type="text/javascript">
